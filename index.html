@@ -6,7 +6,16 @@
   </head>
   <body>
     <header>
-      <!--Здесь будет форма поиска-->
+    <section class="search-field">
+      <h2>Поле поиска по сайту</h2>
+      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Введите запрос</label>
+        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <button type="submit" class="button-search">
+          <img src="img/search.svg" alt="Кнопка поиска" width="16" height="16">
+        </button>
+      </form>
+    </section>
       <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
@@ -39,7 +48,6 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
-      <!--Секция с разделами товаров-->
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит
@@ -60,7 +68,36 @@
            Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
         <a href="#" class="map"><img src="img/map.jpg" alt="Карта" width="560" height="222"></a>
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <p>
+            <img src="img/map-big.jpg" alt="Офис компании по адресу: город Москва, улица Строителей 15" width="960" height="559">
+          </p>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
         <p><a href="#">Напишите нам</a></p>
+        <section class="modal write-to-us">
+          <h2 class="visually-hidden">Окно формы "Напишите нам"</h2>
+          <form class="write-to-us" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="write-to-us-label">Ваше имя:
+              <input type="text" class="write-to-us-name" name="name" placeholder="Имя Фамилия">
+              </label>
+            </p>
+            <p>
+              <label class="write-to-us-label">Ваш e-mail:
+              <input class="write-to-us-email" type="email" name="email" placeholder="email@example.com">
+              </label>
+            </p>
+            <p>
+              <label class="write-to-us-label">Текст письма
+              <textarea class="write-to-us-message" name="message" rows="8">В свободной форме</textarea>
+            </label>
+            </p>
+            <button class="button-send" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
       </section>
     </main>
     <footer class="main-footer">

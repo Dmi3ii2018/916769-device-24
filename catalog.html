@@ -36,7 +36,40 @@
       </ul>
       <section class="filter">
         <h2>Фильтр</h2>
-        <!--Здесь будет форма-->
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" checked>
+                <label for="filter-black">Черный</label></li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="white">
+                <label for="filter-white">Белый</label></li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-blue" type="checkbox" name="blue" checked>
+                <label for="filter-blue">Синий</label></li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-red" type="checkbox" name="red" checked>
+                <label for="filter-red">Красный</label></li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pink" type="checkbox" name="pink">
+                <label for="filter-pink">Розовый</label></li>
+            </ul>
+            </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-yes" type="radio" name="bluetooth" value="Yes">
+                <label for="filter-yes">Есть</label></li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-no" type="radio" name="bluetooth" value="No">
+                <label for="filter-no">Нет</label></li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2>Сортировка</h2>
@@ -92,13 +125,19 @@
           </li>
         </ul>
         <div class="pagination">
-          <span class="button gallery-button gallery-button-back"><a href="#">Назад</a></span>
+          <button class="button gallery-button gallery-button-back" type="button">Назад</button>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"> <a href="#">1</a> </li>
-          <li class="pagination-item"> <a href="#">2</a> </li>
-          <li class="pagination-item"> <a href="#">3</a> </li>
+          <li class="pagination-item pagination-item-current">
+             <button class="button gallery-button-numbers" type="button">1</button>
+           </li>
+          <li class="pagination-item">
+             <button class="button gallery-button-numbers" type="button">2</button>
+         </li>
+          <li class="pagination-item">
+            <button class="button gallery-button-numbers" type="button">3</button>
+          </li>
         </ul>
-          <span class="button gallery-button gallery-button-forward"><a href="#">Вперед</a></span>
+          <button class="button gallery-button gallery-button-back" type="button">Вперед</button>
         </div>
       </section>
       <footer class="main-footer">
