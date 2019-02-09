@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-    <section class="search-field">
-      <h2>Поле поиска по сайту</h2>
+    <div class="search-field">
       <form class="search" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="search">Введите запрос</label>
+        <label class="visually-hidden" for="search">Строка поиска</label>
         <input type="search" name="search" id="search" placeholder="Поиск по сайту">
         <button type="submit" class="button-search">
           <img src="img/search.svg" alt="Кнопка поиска" width="16" height="16">
         </button>
       </form>
-    </section>
+    </div>
       <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
@@ -27,16 +29,16 @@
       </div>
       <ul class="site-navigation">
         <li class="dropdown-menu"><a href="#">Каталог товаров</a>
-          <ul class="dropdown-menu-first-column">
+          <ul class="dropdown-menu-columns dropdown-menu-first-column">
             <li> <a href="#">Виртуальная реальность</a> </li>
             <li> <a href="catalog.html">Моноподы для селфи</a> </li>
             <li> <a href="#">Экшн-камеры</a> </li>
           </ul>
-          <ul class="dropdown-menu-second-column">
+          <ul class="dropdown-menu-columns dropdown-menu-second-column">
             <li> <a href="#">Фитнес-браслеты</a> </li>
             <li> <a href="#">Умные часы</a> </li>
           </ul>
-          <ul class="dropdown-menu-third-column">
+          <ul class="dropdown-menu-columns dropdown-menu-third-column">
             <li> <a href="#">Квадрокоптеры</a> </li>
           </ul>
         </li>
@@ -48,6 +50,7 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
+    <div class="index-columns">
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит
@@ -55,7 +58,7 @@
         <p>Мы можем доставить ваш товар в самые отдаленные
            точки России! DEVICE работает со многими
            транспортными компаниями</p>
-        <ul>
+        <ul class="transportation">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -99,11 +102,12 @@
           <button class="modal-close" type="button">Закрыть</button>
         </section>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
       <p class='footer-logo'>
         <a>
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+          <img src="img/logo-footer.png" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
       </p>
         <div class="footer-user-navigation">
@@ -117,7 +121,7 @@
           <li> <a href="#">Контакты</a> </li>
         </ul>
       <p class="adress">г.Москва, ул.Строителей, 15</p>
-      <a href="tel:+74954959595" class="phone-number">+7(495)495 95 95</a>
+      <a href="tel:+74954959595" class="phone-number">+7(495) 495-95-95</a>
       <div class="footer-social">
       <ul>
         <li><a href="#" class="social-button">Фейсбук</a></li>
@@ -126,8 +130,8 @@
       </ul>
       </div>
       <p class="htmlacademy-logo">
-        <a href="#">
-        <img src="https://htmlacademy.ru/intensive/htmlcss" alt="Ссылка на сайт Htmlacademy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-html.svg" alt="Ссылка на сайт Htmlacademy">
         </a>
       </p>
     </footer>

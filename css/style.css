@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensanslight';
+    src: url('../fonts/opensanslight.woff') format('woff2'),
+         url('../fonts/opensanslight.wof') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy Extrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+
+  background-color: #fff8c9;
+}
+
+.catalog-page{
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.search-field {
+  font-family: 'opensanslight';
+  font-size: 15px;
+  line-height: 30px;
+
+  background-color: rgba(247,226,150, 0.5);
+}
+
+.search-field input[type="search"] {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: rgba(247,226,150, 0.5);
+}
+
+.user-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+nav .main-header-logo:hover,
+nav .main-header-logo:focus,
+.search-field input[type="search"]:hover,
+.search-field input[type="search"]:focus{
+  opacity: 0.6;
+}
+
+.dropdown-menu-columns {
+
+  font-family: "opensanslight";
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: capitalize;
+
+  list-style: none;
+}
+
+.index-columns {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.index-columns h2 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.index-columns p:not(:last-of-type) {
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.transportation {
+  font-size: 16px;
+  line-height: 40px;
+
+  list-style: none;
+}
+
+.section a {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal{
+  display: none;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-user-navigation a {
+  font-family: "opensanslight";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 36px;
+
+  opacity: 0.7;
+}
+
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.adress,
+.phone-number {
+  font-family: "opensanslight";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus,
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus,
+.footer-logo:hover,
+.footer-logo:focus{
+  opacity: 0.6;
+}
+
+/*Стилизация страницы каталога*/
