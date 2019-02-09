@@ -88,8 +88,6 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus,
-nav .main-header-logo:hover,
-nav .main-header-logo:focus,
 .search-field input[type="search"]:hover,
 .search-field input[type="search"]:focus{
   opacity: 0.6;
@@ -179,9 +177,7 @@ nav .main-header-logo:focus,
 .footer-site-navigation a:hover,
 .footer-site-navigation a:focus,
 .footer-user-navigation a:hover,
-.footer-user-navigation a:focus,
-.footer-logo:hover,
-.footer-logo:focus{
+.footer-user-navigation a:focus{
   opacity: 0.6;
 }
 
