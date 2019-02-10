@@ -88,8 +88,6 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus,
-nav .main-header-logo:hover,
-nav .main-header-logo:focus,
 .search-field input[type="search"]:hover,
 .search-field input[type="search"]:focus{
   opacity: 0.6;
@@ -179,10 +177,180 @@ nav .main-header-logo:focus,
 .footer-site-navigation a:hover,
 .footer-site-navigation a:focus,
 .footer-user-navigation a:hover,
-.footer-user-navigation a:focus,
-.footer-logo:hover,
-.footer-logo:focus{
+.footer-user-navigation a:focus{
   opacity: 0.6;
 }
 
 /*Стилизация страницы каталога*/
+
+.catalog-user-profile a,
+.catalog-user-navigation {
+  font-family: "opensanslight";
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.catalog-user-profile .sign-out {
+  opacity: 0.3;
+}
+.catalog-user-profile a:hover,
+.catalog-user-profile a:focus,
+.catalog-user-navigation a:hover,
+.catalog-user-navigation a:focus {
+  opacity: 0.6;
+}
+
+nav .catalog-header-logo:hover,
+nav .catalog-header-logo:focus,
+.catalog-footer-logo:hover,
+.catalog-footer-logo:focus{
+  opacity: 0.6;
+}
+
+.page-title {
+  font-size: 47px;
+  font-weight: 48px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "opensanslight";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs-current {
+  font-family: "opensanslight";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  height: 24px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+.filter label {
+  font-family: "opensanslight";
+  font-size: 14px;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
+.selfie-catalog-list {
+  list-style: none;
+}
+
+.selfie-catalog-list h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.selfie-catalog .price {
+  font-family: "gilroylight";
+  color: #464646;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 24px;
+
+  opacity: 0.3;
+}
+
+.pagination-item-current a {
+  opacity: 1;
+}
+
+.pagination .navigation-button {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.pagination .navigation-button:hover,
+.pagination .navigation-button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-item:not(.pagination-item-current) a:hover,
+.pagination-item:not(.pagination-item-current) a:focus {
+  opacity: 0.6;
+}
+
+.pagination-item:not(.pagination-item-current) a:active {
+  opacity: 1;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus{
+  color: #000000;
+
+  opacity: 1;
+}
+
+.footer-user-profile a{
+  font-family: "opensanslight";
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.footer-user-profile .sign-out {
+  opacity: 0.3;
+}
+
+.footer-user-profile a:hover,
+.footer-user-profile a:focus,
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
+  opacity: 0.3;
+}
+
+.footer-user-profile .sign-out:hover,
+.footer-user-profile .sign-out:focus {
+  opacity: 0.7;
+}
+
+.htmlacademy-logo img:hover,
+.htmlacademy-logo img:focus{
+  opacity: 0.6;
+}
