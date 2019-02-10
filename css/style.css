@@ -34,9 +34,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: "opensanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   font-weight: 800;
   color: #000000;
 
@@ -65,22 +65,25 @@ a {
 }
 
 .main-navigation {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  text-transform: uppercase;
-
   background-color: rgba(247,226,150, 0.5);
 }
 
 .user-navigation {
+  font-family: "opensanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.site-navigation {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-}
+  letter-spacing: 3.6px;
 
-.site-navigation {
   list-style: none;
 }
 
@@ -94,11 +97,11 @@ a {
 }
 
 .dropdown-menu-columns {
-
-  font-family: "opensanslight";
+  font-family: "opensanslight", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   text-transform: capitalize;
+  letter-spacing: 0.2px;
 
   list-style: none;
 }
@@ -110,26 +113,32 @@ a {
 }
 
 .index-columns h2 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5;
 }
 
 .index-columns p:not(:last-of-type) {
-  font-family: "Open Sans Light";
   font-size: 15px;
   line-height: 30px;
 }
 
-.transportation {
+.transportation-list {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
 
   list-style: none;
 }
 
-.section a {
+.more-information {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .modal{
@@ -143,10 +152,10 @@ a {
 }
 
 .footer-user-navigation a {
-  font-family: "opensanslight";
   color: #ffffff;
   font-size: 15px;
   line-height: 36px;
+  letter-spacing: 0.2px;
 
   opacity: 0.7;
 }
@@ -156,15 +165,16 @@ a {
 }
 
 .footer-site-navigation a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .adress,
 .phone-number {
-  font-family: "opensanslight";
   color: #ffffff;
   font-size: 15px;
   line-height: 30px;
@@ -182,15 +192,6 @@ a {
 }
 
 /*Стилизация страницы каталога*/
-
-.catalog-user-profile a,
-.catalog-user-navigation {
-  font-family: "opensanslight";
-  font-size: 15px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: capitalize;
-}
 
 .catalog-user-profile .sign-out {
   opacity: 0.3;
@@ -219,10 +220,10 @@ nav .catalog-header-logo:focus,
 }
 
 .breadcrumbs a {
-  font-family: "opensanslight";
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.1;
 
   opacity: 0.3;
 }
@@ -233,10 +234,10 @@ nav .catalog-header-logo:focus,
 }
 
 .breadcrumbs-current {
-  font-family: "opensanslight";
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.1;
 
   opacity: 0.3;
 }
@@ -246,18 +247,21 @@ nav .catalog-header-logo:focus,
 }
 
 .filter legend {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  height: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.filter label {
+  font-size: 14px;
 }
 
 .filter ul {
   list-style: none;
   line-height: 40px;
-}
-
-.filter label {
-  font-family: "opensanslight";
-  font-size: 14px;
 }
 
 .filter-input:disabled + label {
@@ -269,12 +273,14 @@ nav .catalog-header-logo:focus,
 }
 
 .selfie-catalog-list h3 {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  letter-spacing: 0.2px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .selfie-catalog .price {
-  font-family: "gilroylight";
+  font-family: "gilroylight", Arial, sans-serif;
   color: #464646;
   font-size: 16px;
   line-height: 24px;
@@ -289,8 +295,10 @@ nav .catalog-header-logo:focus,
 }
 
 .pagination-item a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 3.2px;
 
   opacity: 0.3;
 }
@@ -300,8 +308,10 @@ nav .catalog-header-logo:focus,
 }
 
 .pagination .navigation-button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 3.2px;
   text-transform: uppercase;
 }
 
@@ -327,11 +337,9 @@ nav .catalog-header-logo:focus,
 }
 
 .footer-user-profile a{
-  font-family: "opensanslight";
-  font-size: 15px;
-  line-height: 30px;
   color: #ffffff;
   opacity: 0.7;
+  letter-spacing: 0.2px;
 }
 
 .footer-user-profile .sign-out {
