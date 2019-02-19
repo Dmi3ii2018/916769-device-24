@@ -8,7 +8,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="catalog-page">
+    <div class="main-wrapper">
     <header>
+      <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+      </a>
       <div class="search-field">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Строка поиска</label>
@@ -18,23 +23,21 @@
           </button>
         </form>
       </div>
-      <nav class="main-navigation">
-      <a class="catalog-header-logo" href="index.html">
-        <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </a>
       <div class="catalog-user-profile">
         <a href="#">Валентин Петухов</a>
-        <a class="sign-out" href="#">Выйти</a>
+        <a class="main-login" href="#">Войти</a>
       </div>
-      <div class="catalog-user-navigation">
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+      <div class="user-navigation">
+        <a class="compare" href=#>Сравнить</a>
+        <a class="bin" href="#">Корзина</a>
       </div>
       <ul class="site-navigation">
-        <li class="dropdown-menu"><a href="#">Каталог товаров</a>
+        <li class="dropdown-menu header-catalog"><a href="#">Каталог товаров</a>
+        <span class="catalog-sign"></span>
+        <div class="main-page-catalog">
           <ul class="dropdown-menu-columns dropdown-menu-first-column">
             <li> <a href="#">Виртуальная реальность</a> </li>
-            <li> <a href="catalog.html">Моноподы для селфи</a> </li>
+            <li> <a href="catalog.html">Моноподы для cелфи</a> </li>
             <li> <a href="#">Экшн-камеры</a> </li>
           </ul>
           <ul class="dropdown-menu-columns dropdown-menu-second-column">
@@ -44,24 +47,36 @@
           <ul class="dropdown-menu-columns dropdown-menu-third-column">
             <li> <a href="#">Квадрокоптеры</a> </li>
           </ul>
-        </li>
-        <li> <a href="#">Доставка</a></li>
-        <li> <a href="#">Гарантия</a> </li>
-        <li> <a href="#">Контакты</a> </li>
+        </div>
+      </li>
+        <li class="header-shipping"> <a href="#">Доставка</a></li>
+        <li class="header-garanty"> <a href="#">Гарантия</a> </li>
+        <li class="header-contacts"> <a href="#">Контакты</a> </li>
       </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li> <a href="index.html">Главная</a> </li>
-        <li> <a href="#">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
-      <section class="filter">
-        <h2>Фильтр</h2>
+      <div class="breadcrumbs-wrapper">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li> <a href="index.html">Главная</a> </li>
+          <li> <a href="#">Каталог товаров</a></li>
+          <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+        </ul>
+    </div>
+  </div>
+  </div>
+    <div class="catalog-wrapper">
+      <section class="filter-center-wrapper">
+        <h2>Фильтр:</h2>
+        <div class="filter">
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+            <fieldset class="filter-price">
+              <legend>Стоимость</legend>
+              <input class="range-filter" type="range" name="range-filter">
+            </fieldset>
+
+            <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
@@ -94,13 +109,18 @@
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
         </form>
-      </section>
-      <section class="sort">
-        <h2>Сортировка</h2>
-        <!--Здесь будет сортировка-->
-        <span class="arrows"><!--Здесь будут стрелочки сортировки--></span>
-      </section>
-      <section class="selfie-catalog">
+      </div>
+    </section>
+    <div class="sort-goods-wrapper">
+      <div class="sort-container">
+        <section class="sort">
+
+          <h2>Сортировка:</h2>
+        </section>
+      </div>
+      <div class="catalog-goods-wrapper">
+
+        <section class="selfie-catalog">
         <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
         <ul class="selfie-catalog-list">
           <li class="selfie-catalog-item">
@@ -148,54 +168,66 @@
             <a class="button" href="#">Добавить к сравнению</a>
           </li>
         </ul>
-        <div class="pagination">
-          <a class="navigation-button" href="#">Назад</a>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">
-            <a href="#">1</a>
-           </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
-         </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
-          </li>
-        </ul>
-          <a class="navigation-button" href="#">Вперед</a>
-        </div>
       </section>
-      <footer class="main-footer">
-        <p class='catalog-footer-logo'>
-          <a href="index.html">
-            <img src="img/logo-footer.png" width="163" height="35" alt="Логотип магазина Девайс">
-          </a>
+      <section class="pagination">
+        <h2 class="visually-hidden">Нумерация страниц каталога </h2>
+        <a class="navigation-button" href="#">Назад</a>
+        <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current">
+          <a href="#">1</a>
+         </li>
+        <li class="pagination-item">
+          <a href="#">2</a>
+       </li>
+        <li class="pagination-item">
+          <a href="#">3</a>
+        </li>
+        </ul>
+        <a class="navigation-button" href="#">Вперед</a>
+      </section>
+      </div>
+    </div>
+    </div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-wrapper">
+      <p class='footer-logo'>
+        <a>
+          <img src="img/logo-footer.png" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+      </p>
+      <div class="footer-catalog-user-profile">
+        <a href="#">Валентин Петухов</a>
+        <a class="footer-login" href="#">Войти</a>
+      </div>
+        <div class="footer-user-navigation">
+          <a href="#">Сравнить</a>
+          <a href="#">Корзина</a>
+        </div>
+      <div class="footer-wrapper-1">
+          <p class="adress">г.Москва, ул.Строителей, 15</p>
+        <ul class="footer-site-navigation">
+          <li > <a class="footer-shipping" href="#">Доставка</a> </li>
+          <li> <a href="#">Гарантия</a> </li>
+          <li> <a href="#">Контакты</a> </li>
+        </ul>
+        <p class="phone-number">
+          <a href="tel:+74954959595">Тел.: +7(495) 495-95-95</a>
         </p>
-          <div class="footer-user-profile">
-            <a href="#">Валентин Петухов</a>
-            <a class="sign-out" href="#">Выйти</a>
-          </div>
-          <div class="footer-user-navigation">
-            <a href="#">Сравнить</a>
-            <a href="#">Корзина</a>
-          </div>
-          <ul class="footer-site-navigation">
-            <li> <a href="#">Доставка</a> </li>
-            <li> <a href="#">Гарантия</a> </li>
-            <li> <a href="#">Контакты</a> </li>
-          </ul>
-        <p class="adress">г.Москва, ул.Строителей, 15</p>
-        <a href="tel:+74954959595" class="phone-number">+7(495)495 95 95</a>
-        <div class="footer-social">
-        <ul>
-          <li><a href="#" class="social-button">Фейсбук</a></li>
-          <li><a href="#" class="social-button">Инстаграмм</a></li>
+      </div>
+      <div class="footer-wrapper-2">
+        <ul class="footer-social">
+          <li><a href="#" class="social-button">Фейсбук </a></li>
+          <li><a href="#" class="social-button">Инстаграмм </a></li>
           <li><a href="#" class="social-button">Твиттер</a></li>
         </ul>
-        </div>
         <p class="htmlacademy-logo">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.png" alt="Ссылка на сайт Htmlacademy">
+            <img src="img/logo-html.png" alt="Ссылка на сайт Htmlacademy">
           </a>
         </p>
-      </footer>
-    </main>
+      </div>
+      </div>
+    </footer>
+</body>
+</html>

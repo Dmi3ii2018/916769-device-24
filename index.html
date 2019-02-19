@@ -28,8 +28,8 @@
         <a class="bin" href="#">Корзина</a>
       </div>
       <ul class="site-navigation">
-        <li class="dropdown-menu header-catalog"><a href="#">Каталог товаров</a></li>
-        <li class="catalog-sign">
+        <li class="dropdown-menu header-catalog"><a href="#">Каталог товаров</a>
+        <span class="catalog-sign"></span>
         <div class="main-page-catalog">
           <ul class="dropdown-menu-columns dropdown-menu-first-column">
             <li> <a href="#">Виртуальная реальность</a> </li>
@@ -44,12 +44,94 @@
             <li> <a href="#">Квадрокоптеры</a> </li>
           </ul>
         </div>
-        </li>
+      </li>
         <li class="header-shipping"> <a href="#">Доставка</a></li>
         <li class="header-garanty"> <a href="#">Гарантия</a> </li>
         <li class="header-contacts"> <a href="#">Контакты</a> </li>
       </ul>
       </nav>
+      <input class="visually-hidden" type="radio" id="product-1" name="goods" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="goods">
+      <input class="visually-hidden" type="radio" id="product-3" name="goods">
+      <section class="slider">
+        <div class="slider-controls">
+            <label for="product-1" id="label1">
+            <!--  <svg class="slider-pointer">
+              <circle r="5" cx="6" cy="6" fill="black"/>
+              <circle r="3" cx="6" cy="6" fill="white"/>
+            </svg> Добавить спан сделать ли релатив а спан абсолют.В спане свг.-->
+            Первый
+            </label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+        </div>
+        <h2 class="visually-hidden">Слайдер</h2>
+        <ul class="slider-list">
+          <li class="slider-item slide slide1" id="slider1">
+            <div class="slider-description slider-description-one">
+              <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="more-information"> <a href="#">Подробнее</a> </p>
+              <table class="table-description">
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+                <tr>
+                  <td>8.5 м</td>
+                  <td> 5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </table>
+            </div>
+            <p class="slider-image">
+              <img src="img/slider-1.png" width="384" height="486" alt="Селфи палки">
+            </p>
+          </li>
+          <li class="slider-item slide slide2" id="slider2">
+            <div class="slider-description slider-description-two">
+              <h3 class="slider-title">Худеем правильно!</h3>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+не пропускать занятия и соблюдать диету.</p>
+            <p class="more-information"> <a href="#">Подробнее</a> </p>
+            <table class="table-description">
+              <tr>
+                <th>Без подзарядки</th>
+              </tr>
+              <tr>
+                <td>48 часов</td>
+              </tr>
+            </table>
+            </div>
+            <p class="slider-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслеты">
+            </p>
+          </li>
+          <li class="slider-item slide slide3" id="slider3">
+            <div class="slider-description slider-description-three">
+              <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="more-information"> <a href="#">Подробнее</a> </p>
+            <table class="table-description">
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+            </table>
+            </div>
+            <p class="slider-image">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптеры">
+            </p>
+          </li>
+        </ul>
+      </section>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
