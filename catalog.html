@@ -11,9 +11,11 @@
     <div class="main-wrapper">
     <header>
       <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </a>
+      <div class="logo-wrapper">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/main-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+      </div>
       <div class="search-field">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Строка поиска</label>
@@ -25,8 +27,8 @@
       </div>
       <div class="user-navigation">
         <div class="catalog-user-profile">
-          <a href="#">Валентин Петухов</a>
-          <a class="main-login" href="#">Выйти</a>
+          <a class="user-name" href="#">Валентин Петухов</a>
+          <a class="sign-out" href="#">Выйти</a>
         </div>
         <a class="compare" href=#>Сравнить</a>
         <a class="bin" href="#">Корзина</a>
@@ -135,8 +137,16 @@
             <li> <a href="#"> По популярности</a></li>
           </ul>
           <div class="sort-arrows">
-            <span class="arrow-down"><</span>
-            <span class="arrow-up">></span>
+            <a class="arrow-up" href="#" aria-label="По возрастанию">
+              <svg width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
+            <a class="arrow-down" href="#" aria-label="По убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -183,7 +193,7 @@
                 </div>
             </div>
             </li>
-          <li class="catalog-item">
+          <li class="catalog-item new-item">
             <div class="catalog-name-price">
               <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
               <span class="price">4900 руб.</span>
@@ -226,12 +236,30 @@
         </a>
       </p>
         <div class="footer-user-navigation">
-          <div class="footer-catalog-user-profile">
-            <a href="#">Валентин Петухов</a>
-            <a class="footer-login" href="#">Войти</a>
+          <div class="footer-user-profile">
+            <a class="user-name" href="#">
+              <svg class="footer-user-icon" width="13" height="12" viewBox="0 0 13 12">
+                <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+              </svg>
+              <span>Валентин Петухов</span>
+            </a>
+            <a class="footer-catalog-sign-out" href="#">
+              <span>Выйти</span>
+            </a>
           </div>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
+          <a href="#">
+            <svg class="footer-user-icon" width="10" height="10" viewBox="0 0 10 10">
+                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+            </svg>
+            <span>Сравнить</span>
+          </a>
+          <a href="#">
+            <svg class="footer-user-icon" width="12" height="12" viewBox="0 0 12 12">
+                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+            </svg>
+            <span>Корзина</span>
+          </a>
         </div>
       <div class="footer-wrapper-1">
           <p class="adress">г.Москва, ул.Строителей, 15</p>
@@ -246,9 +274,21 @@
       </div>
       <div class="footer-wrapper-2">
         <ul class="footer-social">
-          <li><a href="#" class="social-button">Фейсбук </a></li>
-          <li><a href="#" class="social-button">Инстаграмм </a></li>
-          <li><a href="#" class="social-button">Твиттер</a></li>
+          <li class="footer-social-item">
+            <a href="#" class="social-button">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="social-button">
+              <span class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="social-button">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
         </ul>
         <p class="htmlacademy-logo">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
