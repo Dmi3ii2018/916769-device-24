@@ -270,31 +270,30 @@
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>
-            <img src="img/map-big.jpg" alt="Офис компании по адресу: город Москва, улица Строителей 15" width="960" height="559">
+            <img src="img/map-big-jpg.jpg" alt="Офис компании по адресу: город Москва, улица Строителей 15" width="960" height="559">
           </p>
           <button class="modal-close" type="button">Закрыть</button>
         </section>
         <section class="modal write-to-us">
           <h2 class="visually-hidden">Окно формы "Напишите нам"</h2>
-          <form class="write-to-us" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-to-us-container">
+          <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label class="write-to-us-label">Ваше имя:
-              <input type="text" class="write-to-us-name" name="name" placeholder="Имя Фамилия">
-              </label>
+              <label class="write-to-us-label" for="name">Ваше имя:</label>
+              <input type="text" class="write-to-us-name" id="name" name="name" placeholder="Имя Фамилия" required>
             </p>
             <p>
-              <label class="write-to-us-label">Ваш e-mail:
-              <input class="write-to-us-email" type="email" name="email" placeholder="email@example.com">
-              </label>
+              <label class="write-to-us-label" for="email">Ваш e-mail:</label>
+              <input class="write-to-us-email" id="email" type="email" name="email" placeholder="email@example.com" required>
             </p>
             <p>
-              <label class="write-to-us-label">Текст письма
-              <textarea class="write-to-us-message" name="message" rows="8">В свободной форме</textarea>
-            </label>
+              <label class="write-to-us-label" for="message">Текст письма</label>
+              <textarea class="write-to-us-message" id="message" name="message" rows="8" placeholder="В свободной форме" required></textarea>
             </p>
-            <button class="button-send" type="submit">Отправить</button>
+            <button class="button-send main-button" type="submit">Отправить</button>
           </form>
-          <button class="modal-close" type="button">Закрыть</button>
+        </div>
+        <button class="modal-close" type="button">Закрыть</button>
         </section>
       </section>
     </div>
