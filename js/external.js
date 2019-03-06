@@ -2,8 +2,11 @@
       var searchForm = document.querySelector(".search");
       var searchInput = searchForm.querySelector("[name=search]");
 
-      var link = document.querySelector(".write-to-us-link");
+      var mapLink = document.querySelector(".map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
 
+      var link = document.querySelector(".write-to-us-link");
       var popup = document.querySelector(".write-to-us");
       var close = document.querySelector(".write-to-us-modal-close");
 
@@ -20,6 +23,25 @@
       searchForm.addEventListener("submit", function (evt) {
         if (!searchInput.value) {
           evt.preventDefault();
+        }
+      });
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          }
         }
       });
 
