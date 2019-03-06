@@ -1092,6 +1092,7 @@ display: none;
 
 .modal-show {
   display: block;
+
 }
 
 .write-to-us-container {
@@ -1140,6 +1141,15 @@ display: none;
 
   padding-left: 20px;
   border: 3px solid transparent;
+}
+
+.search input:required {
+  background-color: red;
+}
+
+.write-to-us-form input:required,
+.write-to-us-form textarea:required {
+  background-color: #f6dada;
 }
 
 .write-to-us-form input:hover,
