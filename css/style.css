@@ -93,7 +93,7 @@ header {
 header .header-inner {
   min-height: 766px;
 
-  background-image: linear-gradient(#f7e296, #f7e296 299px, #ffffff 299px, #ffffff 100%);
+  background-image: linear-gradient(#f7e296, #f7e296 39%, #ffffff 39%, #ffffff 100%);
 
   padding: 0;
   margin: 0;
@@ -545,6 +545,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .table-description tbody {
   display: flex;
   flex-direction: column-reverse;
+  flex-wrap: wrap;
+
   width: 550px;
 }
 
@@ -951,6 +953,7 @@ z-index: -1;
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin-top: 68px;
   margin-bottom: 83px;
@@ -1274,7 +1277,7 @@ display: none;
 }
 
 .footer-user-navigation {
-  max-width: 800px;
+  max-width: 700px;
 
   display: flex;
   justify-content: flex-end;
@@ -1316,6 +1319,7 @@ display: none;
 .footer-wrapper-2 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 1160px;
   margin-top: 13px;
 }
@@ -1486,7 +1490,7 @@ display: none;
 
   padding-left: 59px;
 
-  margin-top: 34px;
+  margin-top: 41px;
   margin-bottom: 22px;
 
   width: 100%;
@@ -1961,6 +1965,8 @@ form .filter-button {
 
 .image-compare-wrapper {
   position: relative;
+  width: 360px;
+  height: 380px;
 }
 
 .catalog-name-price {
@@ -1969,6 +1975,7 @@ form .filter-button {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-name-price h3 {
@@ -2039,7 +2046,7 @@ form .filter-button {
   line-height: 24px;
 
   margin: 0;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .selfie-catalog {
@@ -2073,6 +2080,7 @@ form .filter-button {
   padding: 0;
 
   display: flex;
+  flex-wrap: wrap;
 
   max-width: 450px;
   margin-right: -14px;
@@ -2097,7 +2105,7 @@ form .filter-button {
 }
 
 .pagination .navigation-button {
-  font-family: "gilroy", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
