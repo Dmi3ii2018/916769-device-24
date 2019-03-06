@@ -18,11 +18,15 @@
       </div>
       <div class="search-field">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Строка поиска</label>
+          <label for="search">
+            <span class="visually-hidden">Строка поиска</span>
+            <img src="img/search.svg" alt="Кнопка поиска" width="16" height="16">
+          </label>
           <input type="search" name="search" id="search" placeholder="Поиск по сайту">
           <button type="submit" class="button-search">
-            <img src="img/search.svg" alt="Кнопка поиска" width="16" height="16">
+            <span>Найти</span>
           </button>
+          <div class="search-line"></div>
         </form>
       </div>
       <div class="user-navigation">
@@ -162,7 +166,7 @@
             <div class="image-compare-wrapper">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-compare-bin">
-                <a class="main-button" href="#">В корзину</a>
+                <a class="main-button" href="#"><span>В корзину</span></a>
                 <a class="compare-button" href="#">Добавить к сравнению</a>
               </div>
             </div>
@@ -175,7 +179,7 @@
             <div class="image-compare-wrapper">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
               <div class="catalog-compare-bin">
-                <a class="main-button" href="#">В корзину</a>
+                <a class="main-button" href="#"><span>В корзину</span></a>
                 <a class="compare-button" href="#">Добавить к сравнению</a>
               </div>
             </div>
@@ -188,12 +192,12 @@
             <div class="image-compare-wrapper">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="catalog-compare-bin">
-                  <a class="main-button" href="#">В корзину</a>
+                  <a class="main-button" href="#"><span>В корзину</span></a>
                   <a class="compare-button" href="#">Добавить к сравнению</a>
                 </div>
             </div>
             </li>
-          <li class="catalog-item new-item">
+          <li class="catalog-item catalog-item_new">
             <div class="catalog-name-price">
               <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
               <span class="price">4900 руб.</span>
@@ -201,7 +205,7 @@
             <div class="image-compare-wrapper">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog-compare-bin">
-                <a class="main-button" href="#">В корзину</a>
+                <a class="main-button" href="#"><span>В корзину</span></a>
                 <a class="compare-button" href="#">Добавить к сравнению</a>
               </div>
           </div>
@@ -292,7 +296,7 @@
         </ul>
         <p class="htmlacademy-logo">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-html.png" alt="Ссылка на сайт Htmlacademy">
+            <img src="img/logo-html.png" alt="Ссылка на сайт Htmlacademy" title="htmlacademy">
           </a>
         </p>
       </div>
