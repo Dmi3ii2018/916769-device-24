@@ -531,8 +531,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 42px;
 }
 
-/*Оформление переключателя слайдера */
-
 .slider-controls-wrapper {
   position: relative;
 
