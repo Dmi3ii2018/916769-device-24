@@ -16,8 +16,8 @@
       var modalMessage = popup.querySelector(".write-to-us-message");
 
       var isStorageSupport = true;
-      var storage = "";
       var isStorageEmail = true;
+      var storage = "";
       var emailStorage = "";
 
       searchForm.addEventListener("submit", function (evt) {
