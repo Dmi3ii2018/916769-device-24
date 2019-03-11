@@ -1081,6 +1081,24 @@ z-index: -1;
   border: none;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-400px);
+  }
+
+  90% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(-250px);
+  }
+}
+
 .modal{
   position: fixed;
 
@@ -1123,6 +1141,7 @@ display: none;
 .modal-show {
   display: block;
 
+  animation: bounce 0.6s;
 }
 
 .write-to-us-container {
