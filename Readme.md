@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий](https://up.htmlacademy.ru/htmlcss/24/user/916769).
 * Наставник: [Наталья Майстренко](https://htmlacademy.ru/profile/natalie).
-
+Готов к защите
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
