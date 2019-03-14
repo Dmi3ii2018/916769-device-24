@@ -1131,23 +1131,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 }
 
-@keyframes shake {
-0%, 100% {
--webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-}
-
-10%,30%,50%,70%,90% {
--webkit-transform: translate(-45%,-50%);
-        transform: translate(-45%,-50%);
-}
-
-20%,40%,60%,80% {
--webkit-transform: translate(-55%,-50%);
-        transform: translate(-55%,-50%);
-}
-}
-
 .modal {
   position: fixed;
   background-color: #ffffff;
