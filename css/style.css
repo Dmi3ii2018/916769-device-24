@@ -25,7 +25,7 @@
 @font-face {
   font-family: "opensans";
   src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.wof") format("woff");
+    url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -65,7 +65,7 @@ a {
   white-space: nowrap;
 }
 
-header {
+.main-header {
   width: 1160px;
   margin: 0 auto;
 }
@@ -308,12 +308,18 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
 }
 
+.site-navigation li {
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .catalog-page .site-navigation {
   margin-top: 41px;
 }
 
 .catalog-sign {
-  margin-left: 4px;
+  margin-left: 1px;
   display: inline-block;
   vertical-align: middle;
   width: 16px;
@@ -336,10 +342,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .site-navigation>li:nth-child(3) {
   margin-right: auto;
-  margin-left: 35px;
+  margin-left: 24px;
 }
 
 .site-navigation>li:nth-child(4) {
+  padding-right: 0;
   margin-right: -5px;
 }
 
@@ -372,7 +379,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .dropdown-menu {
   width: 52%;
-  margin-left: -2px;
 }
 
 .dropdown-menu-columns {
@@ -696,6 +702,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .main-goods-list-image::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -1107,6 +1114,40 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
+@-webkit-keyframes shake {
+0%, 100% {
+-webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+
+10%,30%,50%,70%,90% {
+-webkit-transform: translate(-45%,-50%);
+        transform: translate(-45%,-50%);
+}
+
+20%,40%,60%,80% {
+-webkit-transform: translate(-55%,-50%);
+        transform: translate(-55%,-50%);
+}
+}
+
+@keyframes shake {
+0%, 100% {
+-webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+
+10%,30%,50%,70%,90% {
+-webkit-transform: translate(-45%,-50%);
+        transform: translate(-45%,-50%);
+}
+
+20%,40%,60%,80% {
+-webkit-transform: translate(-55%,-50%);
+        transform: translate(-55%,-50%);
+}
+}
+
 .modal {
   position: fixed;
   background-color: #ffffff;
@@ -1145,6 +1186,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .modal-show {
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .write-to-us-container {
@@ -1344,6 +1390,8 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 6px;
 }
 
+.footer-user-navigation {}
+
 .footer-user-navigation .footer-user-icon,
 .footer-user-profile .footer-user-icon {
   fill: #ffc600;
@@ -1356,6 +1404,19 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .footer-user-profile .footer-catalog-sign-out {
   margin-left: 13px;
+}
+
+ .footer-user-navigation .sign-out-link {
+  opacity: 0.3;
+}
+
+.footer-user-navigation .footer-catalog-sign-out:hover,
+.footer-user-navigation .footer-catalog-sign-out:focus {
+  opacity: 0.6;
+}
+
+.footer-user-navigation .footer-catalog-sign-out:active {
+  opacity: 1;
 }
 
 .footer-wrapper-1,
@@ -1468,19 +1529,19 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 23px;
 }
 
-.footer-social-item:first-child .social-button::before {
+.footer-social-item-facebook .social-button::before {
   background-image: url(../img/facebook.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.footer-social-item:nth-child(2) .social-button::before {
+.footer-social-item-instagram .social-button::before {
   background-image: url(../img/instagram.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.footer-social-item:last-child .social-button::before {
+.footer-social-item-twitter .social-button::before {
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
